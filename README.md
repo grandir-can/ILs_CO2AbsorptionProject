@@ -19,25 +19,25 @@ The code of ILs_CO2AbsorptionProject are implemented and tested under the follow
    `python DataSplit.py --dataset CO2_capacity --group-key smiles --index-dir ../../data/indexs/CO2_capacity` <br>  
    
 2.  Training gnn <br>
-   `cd my_code/gnn_model/`
-   `python gnn_train.py --model MPNN --target CO2_capacity`
-   `python gnn_train.py --model MPNN --target viscosity`
+   `cd my_code/gnn_model/`<br>
+   `python gnn_train.py --model MPNN --target CO2_capacity`<br>
+   `python gnn_train.py --model MPNN --target viscosity`<br>
 
 3.  Scoring gnn <br>
-   `python Score.py --target CO2_capacity --model MPNN`
-   `python Score.py --target viscosity --model MPNN`
+   `python Score.py --target CO2_capacity --model MPNN`<br>
+   `python Score.py --target viscosity --model MPNN`<br>
 
 4. Scoring ORSA ensemble model<br>
-   `python EnSemble_RobustAverage.py --target CO2_capacity`
-   `python EnSemble_RobustAverage.py --target viscosity`
+   `python EnSemble_RobustAverage.py --target CO2_capacity`<br>
+   `python EnSemble_RobustAverage.py --target viscosity`<br>
 5. Scoring WA ensemble model<br>
-   `python EnSemble_weighted.py --target CO2_capacity`
-   `python EnSemble_weighted.py --target viscosity`
+   `python EnSemble_weighted.py --target CO2_capacity`<br>
+   `python EnSemble_weighted.py --target viscosity`<br>
 7. Scoring stack ensemble model<br>
-   `python Ensemble_Stacking.py --target CO2_capacity --meta extra_trees`
-   `python Ensemble_Stacking.py --target viscosity --meta extra_trees`
-   `python Ensemble_Stacking.py --target CO2_capacity --meta linearregression`
-   `python Ensemble_Stacking.py --target viscosity --meta linearregression`
+   `python Ensemble_Stacking.py --target CO2_capacity --meta extra_trees`<br>
+   `python Ensemble_Stacking.py --target viscosity --meta extra_trees`<br>
+   `python Ensemble_Stacking.py --target CO2_capacity --meta linearregression`<br>
+   `python Ensemble_Stacking.py --target viscosity --meta linearregression`<br>
 
    
 
