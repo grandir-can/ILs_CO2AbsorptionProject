@@ -18,9 +18,14 @@ The code of ILs_CO2AbsorptionProject are implemented and tested under the follow
    `cd my_code/data_process/`   
    `python DataSplit.py --dataset CO2_capacity --group-key smiles --index-dir ../../data/indexs/CO2_capacity`   
    
-3. 
+2.  Training gnn
+   `cd my_code/gnn_model/`
+   `python gnn_train.py --model MPNN --target CO2_capacity`
+   `python gnn_train.py --model MPNN --target viscosity`
+
+4.  
    
-4. James Monroe
-5. John Quincy Adams
+5. James Monroe
+6. John Quincy Adams
 
 
