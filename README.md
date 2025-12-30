@@ -27,13 +27,13 @@ The code of ILs_CO2AbsorptionProject are implemented and tested under the follow
    `python Score.py --target CO2_capacity --model MPNN`
    `python Score.py --target viscosity --model MPNN`
 
-4. Scoring ORSA ensemble model
+4. Scoring ORSA ensemble model<br>
    `python EnSemble_RobustAverage.py --target CO2_capacity`
    `python EnSemble_RobustAverage.py --target viscosity`
-5. Scoring WA ensemble model
+5. Scoring WA ensemble model<br>
    `python EnSemble_weighted.py --target CO2_capacity`
    `python EnSemble_weighted.py --target viscosity`
-7. Scoring stack ensemble model
+7. Scoring stack ensemble model<br>
    `python Ensemble_Stacking.py --target CO2_capacity --meta extra_trees`
    `python Ensemble_Stacking.py --target viscosity --meta extra_trees`
    `python Ensemble_Stacking.py --target CO2_capacity --meta linearregression`
