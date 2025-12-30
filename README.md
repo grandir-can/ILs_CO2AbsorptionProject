@@ -18,14 +18,27 @@ The code of ILs_CO2AbsorptionProject are implemented and tested under the follow
    `cd my_code/data_process/`   
    `python DataSplit.py --dataset CO2_capacity --group-key smiles --index-dir ../../data/indexs/CO2_capacity`   
    
-2.  Training gnn
+2.  Training gnn <br>
    `cd my_code/gnn_model/`
    `python gnn_train.py --model MPNN --target CO2_capacity`
    `python gnn_train.py --model MPNN --target viscosity`
 
-4.  
+3.  Scoring gnn <br>
+   `python Score.py --target CO2_capacity --model MPNN`
+   `python Score.py --target viscosity --model MPNN`
+
+4. Scoring ORSA ensemble model
+   `python EnSemble_RobustAverage.py --target CO2_capacity`
+   `python EnSemble_RobustAverage.py --target viscosity`
+5. Scoring WA ensemble model
+   `python EnSemble_weighted.py --target CO2_capacity`
+   `python EnSemble_weighted.py --target viscosity`
+7. Scoring stack ensemble model
+   `python Ensemble_Stacking.py --target CO2_capacity --meta extra_trees`
+   `python Ensemble_Stacking.py --target viscosity --meta extra_trees`
+   `python Ensemble_Stacking.py --target CO2_capacity --meta linearregression`
+   `python Ensemble_Stacking.py --target viscosity --meta linearregression`
+
    
-5. James Monroe
-6. John Quincy Adams
 
 
