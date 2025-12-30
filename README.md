@@ -15,8 +15,12 @@ The code of ILs_CO2AbsorptionProject are implemented and tested under the follow
 | pandas   | 1.5.3   |
 ## Usage
 1. Data splitting
+   cd my_code/data_process/ //python
+   python DataSplit.py --dataset CO2_capacity --group-key smiles --index-dir ../../data/indexs/CO2_capacity //python
    
-3. James Monroe
-4. John Quincy Adams
+3. 
+   
+4. James Monroe
+5. John Quincy Adams
 
 
