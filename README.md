@@ -15,8 +15,8 @@ The code of ILs_CO2AbsorptionProject are implemented and tested under the follow
 | pandas   | 1.5.3   |
 ## Usage
 1. Data splitting <br>
-   cd my_code/data_process/   //python
-   python DataSplit.py --dataset CO2_capacity --group-key smiles --index-dir ../../data/indexs/CO2_capacity   //python
+   `cd my_code/data_process/`   
+   `python DataSplit.py --dataset CO2_capacity --group-key smiles --index-dir ../../data/indexs/CO2_capacity`   
    
 3. 
    
